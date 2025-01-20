@@ -7,7 +7,7 @@ export default function Home() {
   const [seconds, setSeconds] = useState("00");
 
   const x = setInterval(function () {
-    const countDownDate = new Date("october 31, 2023 00:00:00").getTime();
+    const countDownDate = new Date("January 25, 2025 00:00:00").getTime();
     const now = new Date().getTime();
     const distance = countDownDate - now;
 
@@ -29,15 +29,25 @@ export default function Home() {
   }, 1000);
 
   return (
-    <main className="flex flex-col min-h-screen justify-center text-center">
+    <main
+      style={{
+        backgroundImage: `url(${encodeURI(
+          "https://img.freepik.com/free-photo/armchair-living-room-with-copy-space_43614-908.jpg?t=st=1737370656~exp=1737374256~hmac=ff7b18126b1f4b1a2a2afeb5ea27d9dcb48222e8b701ec13f6ec3d15cd5bd2d4&w=1060"
+        )})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+      className="flex flex-col bg-white  min-h-screen justify-center text-center"
+    >
       <h1 className="text-5xl uppercase font-bold text-center text-slate-700 mb-5">
         {/* Coming Soon{" "} */}
       </h1>
-      <h1 className="text-5xl uppercase font-bold text-center text-[#93278F] mb-5">
-      www.Icchaporon.com
+      <h1 className="text-5xl uppercase font-bold text-center text-[#F36F21] mb-5">
+        www.Bangladeshinterior.com
       </h1>
       <p className="text-gray-500">
-        <b>Icchaporon.com</b> is a best E-commerce solution in Dhaka Bangladesh.
+        <b>Bangladeshinterior.com</b> is a best Interior solution in Dhaka
+        Bangladesh.
       </p>
       <div className="mt-12">
         <input
@@ -45,7 +55,7 @@ export default function Home() {
           placeholder="Enter your Email"
           className="input input-bordered rounded-r-none  w-full max-w-xs"
         />
-        <button className="bg-[#93278F] text-base-100 font-semibold py-3 px-6 rounded-r-md ">
+        <button className="bg-[#F36F21] text-base-100 font-semibold py-3 px-6 rounded-r-md ">
           Send
         </button>
       </div>
@@ -58,7 +68,7 @@ export default function Home() {
             </span>
             days
           </div>
-          <div className="flex flex-col p-2 bg-[#93278F] rounded-box text-neutral-content">
+          <div className="flex flex-col p-2 bg-[#F36F21] rounded-box text-neutral-content">
             <span className="countdown font-mono text-5xl">
               <span style={{ "--value": hours }}></span>
             </span>
