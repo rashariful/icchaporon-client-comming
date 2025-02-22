@@ -1,4 +1,5 @@
 import { useState } from "react";
+import fashionBd from "../assets/fashion-bd.jpg";
 
 export default function Home() {
   const [days, setdays] = useState("00");
@@ -7,7 +8,7 @@ export default function Home() {
   const [seconds, setSeconds] = useState("00");
 
   const x = setInterval(function () {
-    const countDownDate = new Date("January 25, 2025 00:00:00").getTime();
+    const countDownDate = new Date("February 25, 2025 00:00:00").getTime();
     const now = new Date().getTime();
     const distance = countDownDate - now;
 
@@ -46,7 +47,8 @@ export default function Home() {
           width: "100%",
           height: "100%",
           backgroundImage: `url(${encodeURI(
-            "https://img.freepik.com/free-photo/armchair-living-room-with-copy-space_43614-908.jpg?t=st=1737370656~exp=1737374256~hmac=ff7b18126b1f4b1a2a2afeb5ea27d9dcb48222e8b701ec13f6ec3d15cd5bd2d4&w=1060"
+            // "https://i.ibb.co.com/SwT7Bf8d/fashion-bd.jpg"
+            fashionBd
           )})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
@@ -73,14 +75,14 @@ export default function Home() {
             // className=" text-5xl uppercase font-bold text-center text-[#F36F21] mb-5"
             className="text-3xl sm:text-5xl uppercase font-bold text-[#F36F21] mb-5"
           >
-            www.Bangladeshinterior.com
+           priyofashionbd.com
           </h1>
 
           <p
             // className="text-white"
             className="text-white text-lg sm:text-xl max-w-2xl mx-auto"
           >
-            <b>Bangladeshinterior.com</b> is a best Interior solution in Dhaka
+            <b>priyofashionbd.com</b> is a best Interior solution in Dhaka
             Bangladesh.
           </p>
           <div className="mt-12">
@@ -89,7 +91,7 @@ export default function Home() {
               placeholder="Enter your Email"
               className="bg-white input input-bordered rounded-r-none  w-full max-w-xs"
             />
-            <button className="text-white bg-[#F36F21] text-base-100 font-semibold py-3 px-6 rounded-r-md ">
+            <button className="text-white bg-[#F36F21] font-semibold py-3 px-6 rounded-r-md ">
               Send
             </button>
           </div>
