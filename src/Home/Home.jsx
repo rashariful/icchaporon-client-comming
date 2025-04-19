@@ -175,11 +175,11 @@ export default function Home() {
       {/* Content Overlay */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center bg-black/40">
         <h1 className="text-3xl sm:text-5xl uppercase font-bold text-[#F36F21] mb-5">
-          priyofashionbd.com
+          Bangladeshinterior.com
         </h1>
 
         <p className="text-white text-lg sm:text-xl max-w-2xl mx-auto">
-          <b>priyofashionbd.com</b> is the best Fashion solution in Dhaka, Bangladesh.
+        <b>BangladeshInterior.com</b> offers the best architectural solutions in Dhaka, Bangladesh.
         </p>
 
         {/* Email Input */}
