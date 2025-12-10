@@ -13,12 +13,12 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-green-900 to-gray-900 text-white">
       <main className="flex-grow flex flex-col items-center justify-center px-4 sm:px-6 relative overflow-hidden">
         {mounted && (
           <>
             <motion.div
-              className="absolute top-20 left-10 w-64 h-64 rounded-full bg-blue-500/10 blur-3xl"
+              className="absolute top-20 left-10 w-64 h-64 rounded-full bg-green-500/10 blur-3xl"
               initial={{ opacity: 0 }}
               animate={{
                 opacity: [0.1, 0.3, 0.1],
@@ -29,7 +29,7 @@ export default function Home() {
               transition={{ duration: 8, repeat: Infinity, repeatType: "reverse" }}
             />
             <motion.div
-              className="absolute bottom-20 right-10 w-72 h-72 rounded-full bg-amber-500/10 blur-3xl"
+              className="absolute bottom-20 right-10 w-72 h-72 rounded-full bg-lime-500/10 blur-3xl"
               initial={{ opacity: 0 }}
               animate={{
                 opacity: [0.1, 0.2, 0.1],
@@ -62,9 +62,9 @@ export default function Home() {
             </svg>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-2">
-            <span className="text-amber-400">Bangladesh</span> Interior
+            <span className="text-green-400">EcoShield</span> Pest BD
           </h1>
-          <p className="text-xl text-gray-300">Crafting Exceptional Spaces</p>
+          <p className="text-xl text-gray-300">Eco-Friendly Pest Control Solutions</p>
         </motion.div>
 
         {/* Coming Soon Message */}
@@ -76,8 +76,8 @@ export default function Home() {
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Coming Soon</h2>
           <p className="max-w-md mx-auto text-gray-300 mb-8">
-            We're crafting a new experience for you. Our website is under construction, but we're still available for
-            your interior design needs.
+            We are preparing a powerful eco-friendly pest management website. Stay connected for safe & effective pest
+            control services across Bangladesh.
           </p>
 
           <CountdownTimer />
@@ -89,10 +89,10 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <a href="tel:+8801871366728">
+          <a href="tel:+8801405555822">
             <Button
               type="primary"
-              className="!rounded-full !bg-amber-500 hover:!bg-amber-600 !text-black px-6 py-3 text-base flex items-center gap-2"
+              className="!rounded-full !bg-green-500 hover:!bg-green-600 !text-black px-6 py-3 text-base flex items-center gap-2"
               icon={<PhoneOutlined />}
             >
               Contact Us Now
@@ -106,40 +106,40 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-amber-400">Bangladesh Interior</h3>
+              <h3 className="text-xl font-semibold mb-4 text-green-400">EcoShield Pest BD</h3>
               <p className="text-gray-400 max-w-md">
-                Transforming spaces with innovative design solutions. We specialize in residential and commercial
-                interior design across Bangladesh.
+                Providing safe, eco-friendly pest control for homes, offices & industries. Your trusted Pest Shield in
+                Bangladesh.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-amber-400">Contact Us</h3>
+              <h3 className="text-xl font-semibold mb-4 text-green-400">Contact Us</h3>
               <ul className="space-y-3 text-gray-400">
                 <li className="flex items-center">
-                  <PhoneOutlined className="text-amber-500 mr-3" />
-                  <a href="tel:+8801871366728" className="hover:text-white transition-colors">
-                    +880 1871 366 728
+                  <PhoneOutlined className="text-green-400 mr-3" />
+                  <a href="tel:+8801405555822" className="hover:text-white transition-colors">
+                    +880 1405 555 822
                   </a>
                 </li>
                 <li className="flex items-center">
-                  <MailOutlined className="text-amber-500 mr-3" />
-                  <a href="mailto:info@bangladeshinterior.com" className="hover:text-white transition-colors">
-                    info@bangladeshinterior.com
+                  <MailOutlined className="text-green-400 mr-3" />
+                  <a href="mailto:ecoshieldpestbd@gmail.com" className="hover:text-white transition-colors">
+                    ecoshieldpestbd@gmail.com
                   </a>
                 </li>
                 <li className="flex items-start">
-                  <EnvironmentOutlined className="text-amber-500 mr-3 mt-1" />
-                  <span>Dhaka, Bangladesh</span>
+                  <EnvironmentOutlined className="text-green-400 mr-3 mt-1" />
+                  <span>Chittagong Office, Bangladesh</span>
                 </li>
                 <li className="flex items-center">
-                  <ClockCircleOutlined className="text-amber-500 mr-3" />
-                  <span>Open: 10:00 AM - 7:00 PM</span>
+                  <ClockCircleOutlined className="text-green-400 mr-3" />
+                  <span>Open: 9:00 AM - 8:00 PM</span>
                 </li>
               </ul>
             </div>
           </div>
           <div className="mt-8 pt-6 border-t border-gray-800 text-center text-gray-500 text-sm">
-            <p>© {new Date().getFullYear()} Bangladesh Interior. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} ecoshieldpestbd.com — All rights reserved.</p>
           </div>
         </div>
       </footer>
